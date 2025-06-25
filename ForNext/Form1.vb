@@ -11,4 +11,5 @@
         MsgBox(stOut)
 
     End Sub
+
 End Class
