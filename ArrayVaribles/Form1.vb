@@ -18,12 +18,9 @@
         iSmallest = aiData(0)
 
         For i = 0 To 4
-            If aiData(i) <= iSmallest Then
-                iSmallest = aiData(i)
-            End If
+            aiData(i) = aiData(i) * 2
+            MsgBox(aiData(i))
         Next
-
-        MsgBox(iSmallest)
 
     End Sub
 
