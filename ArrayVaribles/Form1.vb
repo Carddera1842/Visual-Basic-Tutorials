@@ -26,12 +26,14 @@
         aiData(3) = 22
         aiData(4) = 8
 
-        MsgBox(aiData(0) _
-                & vbNewLine & aiData(1) _
-                & vbNewLine & aiData(2) _
-                & vbNewLine & aiData(3) _
-                & vbNewLine & aiData(4)
-                )
+        Dim i As Integer
+        Dim stOut As String
+
+        For i = 0 To 4
+            stOut = stOut & aiData(i) & vbNewLine
+        Next
+
+        MsgBox(stOut)
 
     End Sub
 
