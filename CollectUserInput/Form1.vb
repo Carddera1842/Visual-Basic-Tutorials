@@ -14,7 +14,6 @@
         MsgBox("Hello " & stFirstName & " " & stLastName & "! You are a " & stGender & " " & stOccupation & ".")
 
     End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         lstOccupation.Items.Add("Writer")
@@ -22,4 +21,5 @@
         lstOccupation.Items.Add("Painter")
 
     End Sub
+
 End Class
