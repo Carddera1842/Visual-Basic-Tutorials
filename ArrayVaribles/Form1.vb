@@ -3,6 +3,7 @@
 
         Dim aiData(4) As Integer
         Dim iTotal As Integer
+        Dim dblAverage As Double
 
         aiData(0) = 5
         aiData(1) = 7
@@ -16,7 +17,9 @@
             iTotal = iTotal + aiData(i)
         Next
 
-        MsgBox(iTotal)
+        dblAverage = iTotal / aiData.Length
+
+        MsgBox(dblAverage)
 
     End Sub
 
