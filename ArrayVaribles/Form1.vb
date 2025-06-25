@@ -14,12 +14,12 @@
         Dim i As Integer
 
         For i = 0 To 4
-            iTotal = iTotal + aiData(i)
+            If aiData(i) > 20 Then
+                iTotal = iTotal + aiData(i)
+            End If
         Next
 
-        dblAverage = iTotal / aiData.Length
-
-        MsgBox(dblAverage)
+        MsgBox(iTotal)
 
     End Sub
 
