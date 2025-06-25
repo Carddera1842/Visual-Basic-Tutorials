@@ -4,6 +4,7 @@
         Dim aiData(4) As Integer
         Dim iTotal As Integer
         Dim dblAverage As Double
+        Dim iLargest As Integer
 
         aiData(0) = 5
         aiData(1) = 7
@@ -14,12 +15,12 @@
         Dim i As Integer
 
         For i = 0 To 4
-            If aiData(i) > 20 Then
-                iTotal = iTotal + aiData(i)
+            If iLargest <= aiData(i) Then
+                iLargest = aiData(i)
             End If
         Next
 
-        MsgBox(iTotal)
+        MsgBox(iLargest)
 
     End Sub
 
