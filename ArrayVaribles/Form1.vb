@@ -11,9 +11,11 @@
 
         Dim i As Integer
 
-        For i = 0 To 4
-            MsgBox(aiData(i))
-        Next
+        MsgBox(aiData(0) _
+                   & vbNewLine & aiData(1) _
+                   & vbNewLine & aiData(2) _
+                   & vbNewLine & aiData(3) _
+                   & vbNewLine & aiData(4))
 
     End Sub
 
