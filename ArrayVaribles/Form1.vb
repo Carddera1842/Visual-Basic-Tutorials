@@ -2,6 +2,7 @@
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
 
         Dim aiData(4) As Integer
+        Dim iTotal As Integer
 
         aiData(0) = 5
         aiData(1) = 7
@@ -11,11 +12,11 @@
 
         Dim i As Integer
 
-        MsgBox(aiData(0) _
-                   & vbNewLine & aiData(1) _
-                   & vbNewLine & aiData(2) _
-                   & vbNewLine & aiData(3) _
-                   & vbNewLine & aiData(4))
+        For i = 0 To 4
+            iTotal = iTotal + aiData(i)
+        Next
+
+        MsgBox(iTotal)
 
     End Sub
 
