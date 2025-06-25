@@ -1,11 +1,16 @@
 ﻿Public Class Form1
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-        Dim stFristName As String
+        Dim stFirstName As String
+        Dim stLastName As String
+        Dim stGender As String
 
-        stFristName = InputBox("Please enter your first name")
+        stFirstName = txtFirstName.Text
+        stLastName = txtLastName.Text
+        stGender = txtGender.Text
 
-        MsgBox("Hello " & stFristName)
+        MsgBox("Hello " & stFirstName & " " & stLastName & "! You are a " & stGender & ".")
 
     End Sub
+
 End Class
