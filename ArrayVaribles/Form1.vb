@@ -5,6 +5,7 @@
         Dim iTotal As Integer
         Dim dblAverage As Double
         Dim iLargest As Integer
+        Dim iSmallest As Integer
 
         aiData(0) = 5
         aiData(1) = 7
@@ -14,13 +15,15 @@
 
         Dim i As Integer
 
+        iSmallest = aiData(0)
+
         For i = 0 To 4
-            If iLargest <= aiData(i) Then
-                iLargest = aiData(i)
+            If aiData(i) <= iSmallest Then
+                iSmallest = aiData(i)
             End If
         Next
 
-        MsgBox(iLargest)
+        MsgBox(iSmallest)
 
     End Sub
 
